@@ -10,4 +10,5 @@ export default defineConfig({
       },
     }),
   ],
+  base: "/saurabh-uthaman-factwise/",
 })
