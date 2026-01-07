@@ -37,7 +37,7 @@ const useEmployeeData = (): State => {
   
   useEffect(() => {
     setTimeout(()=>{
-      fetch("/data/assessment_data.json")
+      fetch(`${import.meta.env.BASE_URL}data/assessment_data.json`)
       .then((res) => res.json())
       .then((data: EmployeeResponse) => {
         dispatch({
